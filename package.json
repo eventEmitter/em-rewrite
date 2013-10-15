@@ -25,6 +25,7 @@
         , "ee-types"                : "*"
         , "ee-log"                  : "*"
         , "ee-project"              : "*"
+        , "ee-error"                : "*"
     }
     , "devDependencies": {}
     , "optionalDependencies": {}
