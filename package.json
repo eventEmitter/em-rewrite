@@ -1,20 +1,20 @@
 {
-      "name"                        : "es-npmjs"
-    , "description"                 : "alternative npmjs implementation"
+      "name"                        : "em-rewrite"
+    , "description"                 : "url rewriting middleware for ee-webservice"
     , "version"                     : "0.1.0"
-    , "homepage"                    : "https://github.com/eventEmitter/es-npmjs"
+    , "homepage"                    : "https://github.com/eventEmitter/em-rewrite"
     , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "licence"                     : "mit"
     , "os"                          : "linux"
     , "repository": {
-          "url"                     : "https://github.com/eventEmitter/es-npmjs.git"
+          "url"                     : "https://github.com/eventEmitter/em-rewrite.git"
         , "type"                    : "git"
     }
     , "engines": {
         "node"                      : ">=v0.10.17"
     }
     , "bugs": {
-        "url"                       : "https://github.com/eventEmitter/es-npmjs/issues"
+        "url"                       : "https://github.com/eventEmitter/em-rewrite/issues"
     }
     , "dependencies": {
           "ee-class"                : "*"

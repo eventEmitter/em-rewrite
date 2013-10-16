@@ -1,23 +1,25 @@
 
+	
+	var   log 				= require( "ee-log" )
+		, RewrtieEngine 	= require( "./" )
+		, engine 			= new RewrtieEngine( { path: "./test" } );
+
+
 	var fakeRequest = {
 		  pathname: "/user/eventEmitter"
 		, query: {}
-		, method: "POST"
+		, method: "post"
 	}
 
-
-	var log = require( "ee-log" );
-
-	var RewrtieEngine = require( "./" );
-
-	var engine = new RewrtieEngine( { path: "./test" } );
-
+	var fakeResponse = {
+		send: function(){
+			log( "external", arguments );
+		} 
+	};
 
 
 	engine.on( "load", function(){
-		engine.request( fakeRequest, { send: function(){
-			log( "external", arguments );
-		} }, function(){
+		engine.request( fakeRequest, fakeResponse, function(){
 			log( "finished", fakeRequest );
 		} );
 	} );

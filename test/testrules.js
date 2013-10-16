@@ -2,6 +2,7 @@
 
 
 	var   Rules = require( "../" ).Rules
+		, log 	= require( "ee-log" )
 		, Class = require( "ee-class" );
 
 
@@ -19,22 +20,16 @@
 
 		, addRules: function(){
 
-			this.add( "/user/:id", "/otheruser/:id" );
+			// this.add( "/user/eventEmitter", "/yeah" );
 
-/*
-			this.add( "/-/user/org.couchdb.user\::ee", { route: "/user/:id", method: "POST" } );
+			// this.add( "/user/:id", "/otheruser/:id" );
 
+			// this.add( /user\/(.*)/gi, "/otheruser/$1" );
 
-			this.add( [ "/eb", "/" ], { route: "/user/:id", method: "POST" } );
+			// this.add( "/user/:id", { to: "/otheruser/:id", method: "PUT" } );
 
-
-			this.add( "/-/user/org.couchdb.user\::ee", function( request, response, next ){
-				request.rewrite( { url: "/user/id", method: "post", headers: {}, data: "" } );
-			} );
-
-
-			this.add( function( request, response, next ){} );
-
-			this.add( { from: "fff:g:gd/", method: "post" } );*/
+			this.add( { fn: function( request, response, nextRule, next ){
+				log( "custom rule!" );
+			}, method: "POST" } );
 		}
 	} );
