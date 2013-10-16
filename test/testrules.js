@@ -22,7 +22,7 @@
 
 			// this.add( "/user/eventEmitter", "/yeah" );
 
-			// this.add( "/user/:id", "/otheruser/:id" );
+			this.add( "/user/:id", "/otheruser/:id", 301 );
 
 			// this.add( /user\/(.*)/gi, "/otheruser/$1" );
 

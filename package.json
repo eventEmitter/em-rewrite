@@ -1,7 +1,7 @@
 {
       "name"                        : "em-rewrite"
     , "description"                 : "url rewriting middleware for ee-webservice"
-    , "version"                     : "0.1.0"
+    , "version"                     : "0.1.1"
     , "homepage"                    : "https://github.com/eventEmitter/em-rewrite"
     , "author"                      : "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "licence"                     : "mit"
