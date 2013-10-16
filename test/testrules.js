@@ -19,9 +19,9 @@
 
 		, addRules: function(){
 
-			this.add( "/:-/user/org.couchdb.user\\::ee", "/user/:id", true );
+			this.add( "/user/:id", "/otheruser/:id" );
 
-
+/*
 			this.add( "/-/user/org.couchdb.user\::ee", { route: "/user/:id", method: "POST" } );
 
 
@@ -33,8 +33,8 @@
 			} );
 
 
-			this.add( function( request, response, next ){}, 404 );
+			this.add( function( request, response, next ){} );
 
-			this.add( { from: "fff:g:gd/", method: "post" } );
+			this.add( { from: "fff:g:gd/", method: "post" } );*/
 		}
 	} );
