@@ -18,7 +18,7 @@
 		engine.request( fakeRequest, { send: function(){
 			log( "external", arguments );
 		} }, function(){
-			log( "finished" );
+			log( "finished", fakeRequest );
 		} );
 	} );
 
