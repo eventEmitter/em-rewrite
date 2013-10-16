@@ -8,7 +8,7 @@ rewriter middleware for ee-websevrive
 
 ## usage
 
-create a directory containing the rewrite direcive classes for you project inside your project dir. add n files containing rewrite functionality to that directory. the library will load and insantitate that rewrite classes.
+create a directory containing the rewrite diretive classes for you project inside your project dir. add n files containing rewrite functionality to that directory. the library will load and insantitate that rewrite classes.
 
 sample rewrite class:
 
@@ -24,6 +24,9 @@ sample rewrite class:
 
 		// ee-class contructor function
 		, init: function( options ){
+			log( options ); // options object passed to the em-rewriter class contructor 
+							// { path: "./myRulesClassDir", someVarToPass: "toMyRewriters" }
+							
 			this.addRules();
 		}
 
@@ -75,7 +78,7 @@ sample aplication making use of the rewriter middleware
 	} );
 
 	// load rewriter
-	var rewriter = new Rewriter( "./myRulesClassDir" );
+	var rewriter = new Rewriter( { path: "./myRulesClassDir", someVarToPass: "toMyRewriters" } );
 	
 	// add middleware to webservice
 	service.use( rewriter );
