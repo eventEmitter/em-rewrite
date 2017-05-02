@@ -1,5 +1,7 @@
 # em-rewrite
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/em-rewrite.svg)](https://greenkeeper.io/)
+
 rewriter middleware for ee-websevrive
 
 ## installation
